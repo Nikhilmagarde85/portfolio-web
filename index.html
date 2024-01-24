@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb99a86837.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <div id = "header">
+         <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" class="logo">
+                <ul id ="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+                
+            </nav>
+            <div class = "header-text">
+                <p>FULL STACK DEVELOPER</p>
+                <h1>Hii, I'm <span> Nikhil</span> <br>Magarde From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class= "row">
+            <div class = "about-col-1">
+                <img src = "images/photo.jpeg">
+            </div>
+            <div class = "about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>
+                     An undergraduate student,
+                     Currently pursuing final year Bachelor of Engineering in the ENTC stream. <br> 
+                      Known for my hardworking ethic and exceptional interpersonal skills.<br>Proficiency in English with 
+                      convincing and influencing abilities.
+                </p>
+                <div class= "tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick ="opentab('education')">Education</p>
+                    <p class="tab-links"onclick ="opentab('experience')">Experience</p>
+
+                    <p class="tab-links"onclick ="opentab('projects')">Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id ="skills">
+                    <ul>
+                        <li><span>BACKEND</span><br>Java, Core Java, Advanced Java </li>
+                        <li><span>DSA</span><br>In Java</li>
+                        <li><span>FRONTEND</span><br>Html, CSS, Java Script</li>
+                        <li><span>DATABASE</span><br>SQL, MYSQL</li>
+                        <li><span>FRAMEWORK</span><br>TailwindCSS</li>
+                        <a href="images/NIKHILMAGARDESRESUME.pdf" download class="btn btn2">Download CV</a>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Java Developer Intern</span><br>Key Skills: Java, Core Java, SQL <br>
+                        (01 Aug, 2023 - 31 Aug, 2023)</li>
+                     <li><span>Community Manager Intern</span><br>Key Skills: Power BI, Market Research ,Teamwork<br>
+                    (27 Jan, 2023 - 08 Mar, 2023)</li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                <ul>
+                <li><span>Dr.D.Y.Patil Institute of Engineering Management & Research, Akurdi (2020-2024)</span><br> B.E.- Electronics & Telecommunication Engineering.<br>CGPA: 8.84 / 10.00</li>
+                <li><span>Corolla Public School Multai (2018-2019)</span><br> 12th | Madhya Pradesh Board of Secondary Education <br>Percentage: 78.80 / 100.00</li>
+                <li><span>Corolla Public School Multai (2016-2017)</span><br> 10th | Madhya Pradesh Board of Secondary Education <br>Percentage: 87.00 / 100.00</li>
+                
+                </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>HOTEL MANAGEMENT</span><br>01 Aug, 2023 - 27 Aug, 2023<br><p style="color: #dcd8d489; text-decoration: none;">Key Skills: Java, Core Java </p>
+                            JDBC, MySQL.<br>The hotel management project provides room booking, staff management
+                            and other necessary hotel management features.<br>The system allows the
+                            manager to post available rooms in the system. Customers can view and
+                            book rooms online. <br>Admin has the power of either approving or disapproving
+                            the customer's booking request.<br>Project Link :<a href="https://razor-pay-clone-framework-tailwind-css-gbmq.vercel.app/" 
+                            target="_blank" style="color:#b54769;text-decoration: none;"> Click here</a>
+                    
+                        </li>
+                    
+                     
+                
+                        <li><span>RAZORPAY CLONE (FRAMEWORK - TAILWIND CSS)</span><br>04 July, 2023 - 23 July, 2023<br><p style="color: #dcd8d489; text-decoration: none;">Key Skills: HTML, CSS, Tailwind CSS</p>
+                        In this endeavor, I meticulously crafted a faithful replica of the renowned payment platform, Razor Pay. 
+                        Employing the dynamic duo of Tailwind CSS and HTML, this project not only mirrors the original but also seamlessly integrates the
+                        functionality,ensuring a user experience reminiscent of the authentic platform. This hands-on exercise allowed me to delve into the intricacies of web <br>development, 
+                        honing my skills in crafting responsive and visually engaging interfaces.<br>Project Link : <a href="https://razor-pay-clone-framework-tailwind-css-gbmq.vercel.app/" 
+                        target="_blank" style="color:#b54769;text-decoration: none;">Click here</a></li>
+                    </ul>
+            </div>
+        </div>
+
+ </div>
+ 
+
+ <div id="services">
+    <div class="container">
+        <br>
+        <br>
+         <br>
+         <br>
+         <br>
+         <br>
+        <br>
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-house"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="far fa-rocket"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>nikhilmagarde85@gmail.com</p>
+                    <p>9111832254</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/NIKHILMAGARDESRESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © nikhilmagarde85. <i class="fas fa-heart"></i> </p>
+        </div>
+        
+    </div>
+    
+    
+               
+    <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+            }
+
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+  sidemenu.style.right = "0";
+}
+
+function closemenu() {
+  sidemenu.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
