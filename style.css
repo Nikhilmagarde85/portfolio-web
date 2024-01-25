@@ -350,25 +350,31 @@ nav ul li a:hover::after{
   
   @media only screen and (max-width: 600px) {
     #header {
-      background-image : url(images/phone.jpeg);
-    }
-  
+        background-image: url(images/bg5.png);
+        background-size: cover; /* or use 'contain' depending on your requirements */
+        background-repeat: no-repeat;
+        /* other styles for the header element */
+      }
+      #sidemenu a {
+        text-decoration: none;
+        color: rgba(248, 246, 246, 0.884); /* Set the text color to black */
+        font-weight: bold; /* You can adjust the font-weight as needed */
+        font-size: 16px; /* You can adjust the font-size as needed */
+      }
     .logo{
         display: none;
     }
-    #sidemenu {
-        display: none; 
-    }
+    
     
     .header-text {
-      margin-top: 60%;
+      margin-top: 150%;
       font-size: 16px;
-      color: #080808;
+      color: #f7f7f7;
     }
   
-    
     .header-text h1 {
       font-size: 30px;
+      
     }
   
   nav .fas {
@@ -378,12 +384,13 @@ nav ul li a:hover::after{
   
   nav ul {
     background: #ff004f;
-    position: fixed;
+    position: relative;
+    margin-left: 0px;
     top: 0;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
+    left: -5;
+    width: 10px;
+    height: 10vh;
+    padding-top: 00px;
     z-index: 2;
     transition: right 0.5s;
   }

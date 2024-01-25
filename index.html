@@ -226,27 +226,6 @@
             document.getElementById(tabname).classList.add("active-tab");
             }
 </script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-var btn11 = document.querySelectorAll('.btn11');
-
-function openmenu() {
-    sidemenu.style.right = "0";
-    toggleButtonsVisibility(true);
-}
-
-function closemenu() {
-    sidemenu.style.right = "-200px";
-    toggleButtonsVisibility(false);
-}
-
-function toggleButtonsVisibility(showButtons) {
-    btn11.forEach(button => {
-        button.style.display = showButtons ? 'inline-block' : 'none';
-    });
-}
-
-</script>
 
 </body>
 </html>
