@@ -20,11 +20,11 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-                
-                
+                    
+<ul>
+
+</ul>
+
             </nav>
             <div class = "header-text">
                 <p>FULL STACK DEVELOPER</p>
@@ -119,19 +119,19 @@
             <div>
                 <i class="fas fa-house"></i>
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <p>loading...</p>
                 <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fas fa-crop"></i>
                 <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <p>loading</p>
                 <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="far fa-rocket"></i>
                 <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <p>Loading</p>
                 <a href="#">Learn More</a>
             </div>
         </div>
@@ -228,13 +228,22 @@
 </script>
 <script>
     var sidemenu = document.getElementById("sidemenu");
+var btn11 = document.querySelectorAll('.btn11');
 
 function openmenu() {
-  sidemenu.style.right = "0";
+    sidemenu.style.right = "0";
+    toggleButtonsVisibility(true);
 }
 
 function closemenu() {
-  sidemenu.style.right = "-200px";
+    sidemenu.style.right = "-200px";
+    toggleButtonsVisibility(false);
+}
+
+function toggleButtonsVisibility(showButtons) {
+    btn11.forEach(button => {
+        button.style.display = showButtons ? 'inline-block' : 'none';
+    });
 }
 
 </script>

@@ -353,10 +353,17 @@ nav ul li a:hover::after{
       background-image : url(images/phone.jpeg);
     }
   
-  
+    .logo{
+        display: none;
+    }
+    #sidemenu {
+        display: none; 
+    }
+    
     .header-text {
-      margin-top: 100%;
+      margin-top: 60%;
       font-size: 16px;
+      color: #080808;
     }
   
     
@@ -422,10 +429,10 @@ nav ul li a:hover::after{
     font-size: 14px;
   }
 }
-/* Add the following CSS rules at the end of your style.css file */
+
 
 #header {
-    /* ... your existing styles ... */
+    
     background-attachment: fixed;
     background-position: center;
 }
@@ -437,8 +444,7 @@ nav ul li a:hover::after{
 }
 
 body {
-    /* ... your existing styles ... */
-    overflow-x: hidden; /* To prevent horizontal scrolling */
+   
+    overflow-x: hidden; 
 }
 
-/* Additional styles for better visibility and readability */
