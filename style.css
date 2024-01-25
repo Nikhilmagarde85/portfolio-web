@@ -377,12 +377,13 @@ nav ul li a:hover::after{
     
     
     .header-text {
-      margin-top: 150%;
+      margin-top: 90%;
       font-size: 16px;
       color: #d6851b93;
     }
   
     .header-text h1 {
+        margin-top: 13px;
       font-size: 30px;
       
     }
@@ -399,7 +400,7 @@ nav ul li a:hover::after{
     top: 0;
     left: -5;
     width: 10px;
-    height: 10vh;
+    height: 7vh;
     padding-top: 00px;
     z-index: 2;
     transition: right 0.5s;
