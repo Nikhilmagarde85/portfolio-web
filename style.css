@@ -350,11 +350,21 @@ nav ul li a:hover::after{
   
   @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(images/bg5.png);
-        background-size: cover; /* or use 'contain' depending on your requirements */
-        background-repeat: no-repeat;
-        /* other styles for the header element */
-      }
+       
+            background-image: url(images/bg6.png);
+            background-size: contain;
+            background-position: center; /* Optional: Adjust the background position as needed */
+            background-repeat: no-repeat;
+            /* other styles for the header element */
+        
+            /* Ensure the background image is fully visible on small screens */
+            min-height: 100vh;
+            display: flex;
+            align-items: right;
+            justify-content: center;
+        }
+        
+    
       #sidemenu a {
         text-decoration: none;
         color: rgba(248, 246, 246, 0.884); /* Set the text color to black */
@@ -369,7 +379,7 @@ nav ul li a:hover::after{
     .header-text {
       margin-top: 150%;
       font-size: 16px;
-      color: #f7f7f7;
+      color: #d6851b93;
     }
   
     .header-text h1 {
